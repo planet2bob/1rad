@@ -1,0 +1,25 @@
+/*nav bar normalization fixes*/
+
+body {
+/*    padding-top: 70px;*/
+    background-color: lightgray;
+}
+
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+
+#iframe-container{ 
+}
+
+iframe 
+{
+  overflow-x:hidden;
+  overflow-Y:hidden;
+}
