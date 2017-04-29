@@ -1,7 +1,7 @@
 /*nav bar normalization fixes*/
 
 body {
-/*    padding-top: 70px;*/
+    /*    padding-top: 70px;*/
     background-color: lightgray;
 }
 
@@ -10,26 +10,37 @@ body {
 }
 
 @media (max-width: 576px) {
-    nav > .container {
+    nav>.container {
         width: 100%;
     }
 }
 
-#iframe-container{ 
+#iframe-container {}
+
+iframe {
+    overflow-x: hidden;
+    overflow-Y: hidden;
 }
 
-iframe 
-{
-  overflow-x:hidden;
-  overflow-Y:hidden;
+.divider-left {
+    padding-right: 5px;
 }
 
-.divider-left{
-    padding-right: 7px;
-}
-
-.divider-right
-{ 
+.divider-right {
     border-left: 1px solid #000000;
-    padding-left: 4px;
+    padding-left: 5px;
+}
+
+#parent {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#child {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    /* Increase/decrease this value for cross-browser compatibility */
 }

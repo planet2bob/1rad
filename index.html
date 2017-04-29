@@ -12,9 +12,18 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/index.css" rel="stylesheet"> </head>
+    <link href="css/index.css" rel="stylesheet">
 
-<body>
+    <script>
+        function YNconfirm(website) {
+            if (window.confirm('The website you selected does not permit us to show you their content - if you navigate the 1rad navigation bar will disappear')) {
+                window.location.href = website;
+            }
+        }
+    </script>
+</head>
+
+<body id="parent">
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="pages/home.html" target="target-iframe">1rad</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -22,9 +31,9 @@
                 <li class="nav-item dropdown divider-right      "> <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Journals
         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                        <a class="dropdown-item" href="http://www.auntminnie.com/forum/tt.aspx?forumid=2" target="target-iframe">Aunt Minnie</a> 
-                        <a class="dropdown-item" href="http://www.medgadget.com/" target="target-iframe">medGadget</a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="http://www.auntminnie.com/forum/tt.aspx?forumid=2" target="target-iframe">Aunt Minnie</a>
+                        <a class="dropdown-item" href="http://www.medgadget.com/" target="target-iframe">medGadget</a>
                         <a class="dropdown-item" href="http://radlist.com/" target="target-iframe">Radlist</a>
                         <a class="dropdown-item" href="http://www.nejm.org/continuing-medical-education" target="target-iframe">NEJM</a>
                         <a class="dropdown-item" href="http://www.medscape.org/radiology" target="target-iframe">Medscape</a>
@@ -34,9 +43,9 @@
                 <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Resource Centers
         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                        <a class="dropdown-item" href="http://www.netanatomy.com/" target="target-iframe">NetAnatomy</a> 
-                        <a class="dropdown-item" href="https://www.clinicalkey.com/topics/imaging-consult/index.html" target="target-iframe">Clinical Key</a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="http://www.netanatomy.com/" target="target-iframe">NetAnatomy</a>
+                        <a class="dropdown-item" href="https://www.clinicalkey.com/topics/imaging-consult/index.html" target="target-iframe">Clinical Key</a>
                         <a class="dropdown-item" href="https://my.statdx.com/" target="target-iframe">STATdx</a>
                         <a class="dropdown-item" href="http://www.radiologyassistant.nl/en/" target="target-iframe">Radiology Assistant</a>
                         <a class="dropdown-item" href="http://www.yottalook.com/index_web.php" target="target-iframe">Yottalook</a>
@@ -47,34 +56,41 @@
           Blogs
         </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="http://roentgenrayreader.blogspot.com/" target="target-iframe">Roentgen Ray Reader</a> 
+                        <a class="dropdown-item" href="http://roentgenrayreader.blogspot.com/" target="target-iframe">Roentgen Ray Reader</a>
                         <a class="dropdown-item" href="http://sumerdoc.blogspot.com/" target="target-iframe">Sumer's Blog</a>
-                        <a class="dropdown-item" href="http://thehealthcareblog.com/" target="target-iframe">The Health Care Blog</a> 
-                        <a class="dropdown-item" href="http://scopeblog.stanford.edu/" target="target-iframe">Scope</a> 
-                        <a class="dropdown-item" href="http://medicalfuturist.com/" target="target-iframe">TMF</a> 
-                        <a class="dropdown-item" href="http://www.kevinmd.com/blog/" target="target-iframe">Kevin MD</a> 
-                        <a class="dropdown-item" href="http://33charts.com/" target="target-iframe">33Charts</a> 
-                        <a class="dropdown-item" href="https://www.nih.gov/news-events" target="target-iframe">NIH</a> 
+                        <a class="dropdown-item" href="http://thehealthcareblog.com/" target="target-iframe">The Health Care Blog</a>
+                        <a class="dropdown-item" href="http://scopeblog.stanford.edu/" target="target-iframe">Scope</a>
+                        <a class="dropdown-item" href="http://medicalfuturist.com/" target="target-iframe">TMF</a>
+                        <a class="dropdown-item" href="http://www.kevinmd.com/blog/" target="target-iframe">Kevin MD</a>
+                        <a class="dropdown-item" href="http://33charts.com/" target="target-iframe">33Charts</a>
+                        <a class="dropdown-item" href="https://www.nih.gov/news-events" target="target-iframe">NIH</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown divider-right"> <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown divider-right divider-left"> <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Criteria
         </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="http://www.1rad.com/thyroid.html" target="target-iframe">Thyroid</a> 
+                        <a class="dropdown-item" href="http://www.1rad.com/thyroid.html" target="target-iframe">Thyroid</a>
                         <a class="dropdown-item" href="http://www.1rad.com/fc.html" target="target-iframe">Fleishner</a>
-                        <a class="dropdown-item" href="http://www.1rad.com/pages/Lirads.html" target="target-iframe">LI-RADS</a> 
-                        <a class="dropdown-item" href="http://1rad.com/sections/LiverSection.html" target="target-iframe">Liver</a> 
-                        <a class="dropdown-item" href="http://www.1rad.com/OvarianCystConsensus.html" target="target-iframe">Ovary</a> 
-                        <a class="dropdown-item" href="http://www.1rad.com/bosniak.html" target="target-iframe">Bosniak</a> 
-                        <a class="dropdown-item" href="http://www.1rad.com/OvarianCystConsensus.html" target="target-iframe">Ovary</a> 
-                        <a class="dropdown-item" href="http://www.1rad.com/OvarianCystConsensus.html" target="target-iframe">Ovary</a> 
-                        
+                        <a class="dropdown-item" href="http://www.1rad.com/pages/Lirads.html" target="target-iframe">LI-RADS</a>
+                        <a class="dropdown-item" href="http://1rad.com/sections/LiverSection.html" target="target-iframe">Liver</a>
+                        <a class="dropdown-item" href="http://www.1rad.com/OvarianCystConsensus.html" target="target-iframe">Ovary</a>
+                        <a class="dropdown-item" href="http://www.1rad.com/bosniak.html" target="target-iframe">Bosniak</a>
                     </div>
+                </li>
+                <li class="nav-item dropdown divider-right"> <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Other
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class='dropdown-item' href="pages/home.html" onclick="YNconfirm('http://www.google.com'); return false;" target="target-iframe">Google</a>
+                        <a class='dropdown-item' href="pages/home.html" onclick="YNconfirm('http://www.reddit.com'); return false;" target="target-iframe">Reddit</a>
+                        <a class="dropdown-item" href="http://www.1rad.com/BlankWhitePage.html" target="target-iframe">White</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
-    <div id="iframe-container">
+    <div id="iframe-container child">
         <iframe src="pages/home.html" name="target-iframe" style="position: absolute; height: 94%; border: none" width="100%" seamless="seamless"> </iframe>
     </div>
     <!-- jQuery Version 3.1.1 -->
