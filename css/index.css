@@ -23,3 +23,13 @@ iframe
   overflow-x:hidden;
   overflow-Y:hidden;
 }
+
+.divider-left{
+    padding-right: 7px;
+}
+
+.divider-right
+{ 
+    border-left: 1px solid #000000;
+    padding-left: 4px;
+}
